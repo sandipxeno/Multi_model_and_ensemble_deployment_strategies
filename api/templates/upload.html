@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Image for Prediction</title>
+</head>
+<body>
+    <h1>Upload file for Prediction</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required><br><br>
+
+        <label for="method">Choose Ensemble Method:</label>
+        <select name="method" id="method">
+            <option value="bagging">Bagging</option>
+            <option value="boosting">Boosting</option>
+            <option value="stacking">Stacking</option>
+            <option value="ab">A/B Test (Random)</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
