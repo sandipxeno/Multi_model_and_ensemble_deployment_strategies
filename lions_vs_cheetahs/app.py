@@ -4,7 +4,7 @@ import numpy as np
 from flask import Flask, request, render_template_string
 from tensorflow.keras.preprocessing import image # type: ignore
 import joblib
-
+ 
 # Load models
 bagging_model = joblib.load('models/bagging_model.pkl')
 boosting_model = joblib.load('models/boosting_model.pkl')
