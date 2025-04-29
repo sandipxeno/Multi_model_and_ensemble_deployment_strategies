@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Prediction</title>
+</head>
+<body>
+    <h1>Upload Image for Prediction</h1>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <label for="file">Choose an image:</label>
+        <input type="file" name="file" id="file" required><br><br>
+        
+        <label for="method">Choose Prediction Method:</label>
+        <select name="method" id="method" required>
+            <option value="bagging">Bagging</option>
+            <option value="boosting">Boosting</option>
+            <option value="stacking">Stacking</option>
+            <option value="ab_testing">A/B Testing</option>
+            <option value="low_latency">Low Latency Ensemble</option>
+        </select><br><br>
+        
+        <button type="submit">Upload and Predict</button>
+    </form>
+</body>
+</html>

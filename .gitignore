@@ -1,0 +1,42 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Compiled Cython files
+*.c
+*.cpp
+*.pyd
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# Dataset folders
+cifar10/
+
+# NumPy files
+*.npy
