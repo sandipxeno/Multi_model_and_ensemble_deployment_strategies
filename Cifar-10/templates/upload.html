@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Complete</title>
+</head>
+<body>
+    <h1>Image Uploaded Successfully!</h1>
+    <img src="{{ image_path }}" alt="Uploaded Image">
+    <h2>Select the Model Method for Prediction</h2>
+    <form action="/predict" method="post">
+        <label>Select Model:</label>
+        <select name="method">
+            <option value="bagging">Bagging</option>
+            <option value="boosting">Boosting</option>
+            <option value="stacking">Stacking</option>
+            <option value="ab_testing">A/B Testing</option>
+            <option value="low_latency">Low Latency Ensemble</option>
+        </select>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
